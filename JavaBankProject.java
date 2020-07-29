@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class RhymeBank7{
+public class Bank{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int size = 0;
@@ -37,25 +37,25 @@ public class RhymeBank7{
 				accountNames[index] = input.nextLine();
 			}
 			else if(userInput == 3){
-				System.out.println("Bank Check Balence Menu");
-				System.out.println("Please Enter a customer ID to check their balence");
+				System.out.println("Bank Check Balance Menu");
+				System.out.println("Please Enter a customer ID to check their balance");
 				int index = input.nextInt();
-				double balence = accountBalences[index];
-				System.out.println("This customer has $" + balence + " in their account");
+				double balance = accountBalances[index];
+				System.out.println("This customer has $" + balance + " in their account");
 			}
 			else if(userInput == 4){
-				System.out.println("Bank Modify Balence Menu");
-				System.out.println("Please Enter a customer ID to check their balence");
+				System.out.println("Bank Modify Balance Menu");
+				System.out.println("Please Enter a customer ID to check their balance");
 				int index = input.nextInt();
-				System.out.println("What is the customer's new account balence");
-				accountBalences[index] = input.nextDouble();
+				System.out.println("What is the customer's new account balance");
+				accountBalances[index] = input.nextDouble();
 			}
 			else if(userInput == 5){
 				System.out.println("Bank All Customer Summary Menu");
 				double total = 0;
 				for(int i = 0; i < size; i++){
-					total = total + accountBalences[i];
-					System.out.println(accountNames[i] + " has $" + accountBalences[i] + " in their account");
+					total = total + accountBalances[i];
+					System.out.println(accountNames[i] + " has $" + accountBalances[i] + " in their account");
 				}
 				System.out.println("In total, there is $" + total + " in the bank");
 			}
