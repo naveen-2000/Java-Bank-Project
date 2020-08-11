@@ -3,7 +3,7 @@ public class Bank{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int size = 0;
-		double[] accountBalences = new double[250];
+		double[] accountBalances = new double[250];
 		String[] accountNames = new String[250];
 		for(;true;){
 			System.out.println("Bank Admin Menu");
